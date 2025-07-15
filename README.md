@@ -1,5 +1,16 @@
-
 ##  Evaluación: Estructuras de Datos con Set y Map y logica de arboles
+
+## Estudiante: Victoria Andrade
+
+## Salida del terminal
+
+<img width="488" height="626" alt="image" src="https://github.com/user-attachments/assets/6e602417-66c3-49c9-af35-fb43112015e3" />
+
+
+## Nota
+
+<img width="1412" height="888" alt="image" src="https://github.com/user-attachments/assets/36cb688d-7be3-4cf0-ab7d-3e27703723f6" />
+
 
 ### Objetivo
 
