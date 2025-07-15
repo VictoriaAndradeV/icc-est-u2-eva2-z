@@ -1,6 +1,8 @@
+import controllers.LibroController;
 import java.util.List;
-
+import java.util.Map;
 import models.Book;
+import validaciones.ValidacionLibro;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -31,5 +33,15 @@ public class App {
                 new Book("Ciberseguridad", "Pedro León", 2023),
                 new Book("Blockchain", "Marta Ríos", 2021),
                 new Book("Machine Learning", "Cristina Gómez", 2022));
+
+        LibroController controller = new LibroController();
+        Map<Book, Book> librosProcesados = controller.procesarLibros(libros);
+
+        // Validar el orden y duplicados
+        ValidacionLibro.validarResultadoTreeMap(librosProcesados);
+
+        // (Opcional) Imprimir libros ordenados
+        System.out.println("\nLibros ordenados final:");
+        librosProcesados.keySet().forEach(System.out::println);
     }
 }

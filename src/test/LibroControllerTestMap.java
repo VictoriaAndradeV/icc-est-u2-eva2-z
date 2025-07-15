@@ -1,10 +1,11 @@
 package test;
 
-import controllers.LibroController;
 import models.Book;
-import validaciones.ValidacionesLibro;
+import validaciones.ValidacionLibro;
 
 import org.junit.jupiter.api.Test;
+
+import controllers.LibroController;
 
 import java.util.List;
 import java.util.Map;
@@ -43,6 +44,6 @@ public class LibroControllerTestMap {
         @Test
         public void testProcesarConTreeMap() {
                 Map<Book, Book> resultado = controller.procesarLibros(libros);
-                ValidacionesLibro.validarResultadoTreeMap(resultado);
+                ValidacionLibro.validarResultadoTreeMap(resultado);
         }
 }
